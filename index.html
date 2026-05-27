@@ -7,6 +7,7 @@
 <title>FLOW LLC.</title>
 
 <style>
+
 *{
   margin:0;
   padding:0;
@@ -49,9 +50,13 @@ header{
   height:80px;
 }
 
+nav{
+  display:flex;
+  gap:30px;
+}
+
 nav a{
   color:#aaa;
-  margin-left:30px;
   text-decoration:none;
   transition:.3s;
 }
@@ -67,6 +72,7 @@ nav a:hover{
 .hero small{
   color:#3b82f6;
   letter-spacing:4px;
+  font-size:14px;
 }
 
 .hero h1{
@@ -75,15 +81,44 @@ nav a:hover{
   margin:25px 0;
 }
 
-.hero p{
+.hero-description{
   max-width:700px;
   color:#aaa;
   font-size:18px;
   line-height:1.8;
+  margin-top:40px;
+}
+
+.hero-message{
+  margin:50px 0;
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+  max-width:1000px;
+}
+
+.message-block{
+  border-left:3px solid #3b82f6;
+  padding-left:20px;
+}
+
+.message-block span{
+  display:block;
+  color:#3b82f6;
+  font-size:14px;
+  letter-spacing:3px;
+  margin-bottom:12px;
+}
+
+.message-block p{
+  font-size:34px;
+  line-height:1.7;
+  font-weight:700;
+  color:#fff;
 }
 
 .btns{
-  margin-top:40px;
+  margin-top:50px;
 }
 
 .btn{
@@ -130,6 +165,7 @@ section{
   color:#3b82f6;
   letter-spacing:4px;
   margin-bottom:15px;
+  font-size:14px;
 }
 
 .cards{
@@ -155,6 +191,7 @@ section{
 
 .card h3{
   margin-bottom:15px;
+  font-size:24px;
 }
 
 .card p{
@@ -167,6 +204,7 @@ section{
   line-height:2;
   max-width:900px;
   margin-top:20px;
+  font-size:18px;
 }
 
 .company-info{
@@ -180,7 +218,7 @@ section{
 .company-info div{
   background:rgba(255,255,255,.03);
   border:1px solid rgba(59,130,246,.1);
-  padding:18px 24px;
+  padding:20px 24px;
   border-radius:16px;
 }
 
@@ -199,14 +237,9 @@ footer{
   }
 
   nav{
-    display:flex;
-    gap:20px;
     flex-wrap:wrap;
     justify-content:center;
-  }
-
-  nav a{
-    margin-left:0;
+    gap:20px;
   }
 
   .hero{
@@ -217,7 +250,16 @@ footer{
     font-size:42px;
   }
 
+  .message-block p{
+    font-size:24px;
+  }
+
+  .hero-description{
+    font-size:16px;
+  }
+
 }
+
 </style>
 </head>
 
@@ -237,25 +279,39 @@ footer{
 
 <section class="hero">
 
-  <small>FROW</small>
+  <small>FROW LLC.</small>
 
   <h1>
-Philosophy
-
-「覚醒は、没頭の先にある。」
-
-Mission
-
-「人が最も力を発揮できるFLOWを創る。」
-
-Vision
-
-「熱狂と集中が、社会を動かす。」<br>
-  
+    FROW
   </h1>
 
-  <p>
-    FLOW llc. は、
+  <div class="hero-message">
+
+    <div class="message-block">
+      <span>Philosophy</span>
+      <p>
+        「覚醒は、没頭の先にある。」
+      </p>
+    </div>
+
+    <div class="message-block">
+      <span>Mission</span>
+      <p>
+        「人が最も力を発揮できるFLOWを創る。」
+      </p>
+    </div>
+
+    <div class="message-block">
+      <span>Vision</span>
+      <p>
+        「熱狂と集中が、社会を動かす。」
+      </p>
+    </div>
+
+  </div>
+
+  <p class="hero-description">
+    FLOW LLC. は、
     電気通信工事・無線設備工事・通信インフラ構築・人材派遣を通じ、
     次世代社会を支えるサービスを提供しています。
   </p>
@@ -350,8 +406,8 @@ Vision
     </div>
 
     <div>
-      <strong>会社名(英語表記)：</strong>
-      FROW llc.
+      <strong>会社名（英語表記）：</strong>
+      FROW LLC.
     </div>
 
     <div>
